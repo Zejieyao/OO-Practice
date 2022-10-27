@@ -36,7 +36,7 @@ namespace OOPracticeTest
         public void Should_return_message_when_speed_up_given_driver_car_name_and_speed()
         {
             //given
-            Vehicle vehicle = new Vehicle("Cool Car", 30);
+            Car vehicle = new Car("Cool Car", 30);
             Driver driver = new Driver(vehicle);
             //when
             string msg = driver.DriveVehicleShowMessage();
@@ -48,7 +48,7 @@ namespace OOPracticeTest
         public void Should_return_message_when_speed_up_given_driver_truck_name_and_speed()
         {
             //given
-            Vehicle vehicle = new Vehicle("Big Truck", 10);
+            Truck vehicle = new Truck("Big Truck", 10);
             Driver driver = new Driver(vehicle);
             //when
             string msg = driver.DriveVehicleShowMessage();
