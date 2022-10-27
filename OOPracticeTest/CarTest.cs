@@ -55,5 +55,29 @@ namespace OOPracticeTest
             //then
             Assert.Equal("Big Truck: speed up 10 km/h", msg);
         }
+
+        [Fact]
+        public void Should_return_message_when_given_car_gasoline_engine()
+        {
+            //given
+            Car car = new Car("Cool car", "gasoline");
+
+            //when
+            string msg = car.SpeedUpCar();
+            //then
+            Assert.Equal("Cool car: speed up 30 km/h", msg);
+        }
+
+        [Fact]
+        public void Should_return_message_when_given_car_electric_engine()
+        {
+            //given
+            Car car = new Car("Cool car", "electric");
+
+            //when
+            string msg = car.SpeedUpCar();
+            //then
+            Assert.Equal("Cool car: speed up 25 km/h", msg);
+        }
     }
 }

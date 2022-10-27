@@ -10,11 +10,18 @@ namespace OOPractice
     {
         private string name;
         private int speed;
+        private string engineType;
 
         public Vehicle(string name, int speed)
         {
             this.name = name;
             this.speed = speed;
+        }
+
+        public Vehicle(string engineType, string name)
+        {
+            this.name = name;
+            this.engineType = engineType;
         }
 
         public string SpeedUp()
