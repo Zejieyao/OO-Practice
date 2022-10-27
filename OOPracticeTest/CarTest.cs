@@ -60,10 +60,11 @@ namespace OOPracticeTest
         public void Should_return_message_when_given_car_gasoline_engine()
         {
             //given
-            Car car = new Car("Cool car", "gasoline");
+            Engine engine = new Engine("gasoline");
+            Car car = new Car("Cool car", engine);
 
             //when
-            string msg = car.SpeedUpCar();
+            string msg = car.SpeedUp();
             //then
             Assert.Equal("Cool car: speed up 30 km/h", msg);
         }
@@ -72,10 +73,11 @@ namespace OOPracticeTest
         public void Should_return_message_when_given_car_electric_engine()
         {
             //given
-            Car car = new Car("Cool car", "electric");
+            Engine engine = new Engine("electric");
+            Car car = new Car("Cool car", engine);
 
             //when
-            string msg = car.SpeedUpCar();
+            string msg = car.SpeedUp();
             //then
             Assert.Equal("Cool car: speed up 25 km/h", msg);
         }
